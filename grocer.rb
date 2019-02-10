@@ -51,11 +51,11 @@ end
 
 def checkout(cart, coupons)
   consolidated = consolidate_cart(cart)
-  binding.pry
+  # binding.pry
   couponed = apply_coupons(consolidated, coupons)
-  binding.pry
+  # binding.pry
   cleared = apply_clearance(couponed)
-   binding.pry
+  #  binding.pry
   # calculate the total
   total = 0
   cleared.each do |item, attributes|
@@ -63,7 +63,7 @@ def checkout(cart, coupons)
     # binding.pry
   end
   total
-  binding.pry
+  # binding.pry
 
 
 end
