@@ -50,6 +50,7 @@ def apply_clearance(cart) # not an array in this test case!
 end
 
 def checkout(cart, coupons)
+  binding.pry
   consolidated = consolidate_cart(cart)
   binding.pry
   couponed = apply_coupons(consolidated, coupons)
